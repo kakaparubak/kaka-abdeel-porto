@@ -22,7 +22,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
 })
 
 export const metadata: Metadata = {
-  title: "kaka | your next builder.",
+  title: "abdeel | your next builder.",
   description: "Nice to meet you, I am Kaka Abdeel Parubak.",
 };
 
