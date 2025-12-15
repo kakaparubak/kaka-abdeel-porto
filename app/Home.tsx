@@ -38,13 +38,18 @@ const SocialMediaIsland = () => {
 
 const Home = () => {
   return (
-    <div className="flex w-screen justify-end overflow-x-hidden bg-radial-[circle_at_top] from-blue-100 from-15% via-amber-300 via-40% to-white to-70%">
+    <div className="flex w-screen justify-end overflow-x-hidden">
+      <motion.div
+        initial={{ translateY: -300, opacity: 0 }}
+        animate={{ translateY: 0, opacity: 1, transition: { duration: 1 } }}
+        className="absolute h-svh w-screen bg-radial-[circle_at_top] from-blue-100 from-15% via-amber-300 via-40% to-white to-70%"
+      />
       <SocialMediaIsland />
       <div className="flex w-screen items-center justify-center overflow-x-hidden">
         <div className="flex h-svh w-screen items-end justify-center py-0">
           <div className="absolute z-20 flex h-svh flex-col justify-between py-6 md:justify-end lg:justify-end">
             <motion.p
-              className="font-display relative translate-y-1 px-6 pr-16 text-[1.25rem] leading-[1.2] font-medium tracking-tight text-gray-700 md:px-0 md:pr-0 md:text-[1.5rem] lg:px-0 lg:pr-0 lg:text-[1.5rem]"
+              className="font-display relative translate-y-1 px-6 pr-20 text-[1.25rem] leading-[1.2] font-medium tracking-tight text-gray-700 md:px-0 md:pr-0 md:text-[1.5rem] lg:px-0 lg:pr-0 lg:text-[1.5rem]"
               initial={{ opacity: 0 }}
               animate={{ transition: { duration: 1 }, opacity: 1 }}
             >
