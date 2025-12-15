@@ -47,19 +47,6 @@ const Home = () => {
           animate={{ transition: { duration: 1 }, opacity: 1, translateY: 0 }}
         ></motion.div>
         <div className="flex h-lvh w-lvw items-end justify-center py-0">
-          <div className="absolute flex h-lvh w-lvw items-center justify-center">
-            <motion.img
-              initial={{ opacity: 0.9, translateY: 300 }}
-              animate={{
-                transition: { duration: 1 },
-                opacity: 1,
-                translateY: 0,
-              }}
-              whileHover={{ scale: 1.1, rotate: 2 }}
-              src="/IMG_9310.jpeg"
-              className="absolute z-10 hidden w-[clamp(400px,50vw,1800px)] -translate-y-10 -rotate-4 rounded-4xl shadow-2xl shadow-neutral-700 brightness-105 grayscale-95 select-none"
-            ></motion.img>
-          </div>
           <div className="absolute z-20 flex h-lvh flex-col justify-between py-6 md:justify-end lg:justify-end">
             <motion.p
               className="font-display relative translate-y-1 px-8 pr-16 text-[1.5rem] leading-[1.2] font-medium tracking-tight text-gray-700 md:px-0 md:pr-0 lg:px-0 lg:pr-0"
