@@ -7,7 +7,7 @@ import { IoLogoGithub, IoLogoInstagram, IoLogoLinkedin } from "react-icons/io5";
 const SocialMediaIsland = () => {
   return (
     <motion.div
-      className="absolute z-50 m-8 flex flex-col gap-2 text-3xl md:flex-row lg:flex-row"
+      className="absolute z-50 m-6 flex flex-col gap-2 text-3xl md:flex-row lg:flex-row"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
     >
@@ -38,18 +38,13 @@ const SocialMediaIsland = () => {
 
 const Home = () => {
   return (
-    <div className="flex justify-end">
+    <div className="flex w-screen justify-end overflow-x-hidden bg-radial-[circle_at_top] from-blue-100 from-15% via-amber-300 via-40% to-white to-70%">
       <SocialMediaIsland />
-      <div className="flex items-center justify-center">
-        <motion.div
-          className="absolute -z-10 h-[max(140lvh,140lvw)] w-[max(170lvh,170lvw)] -translate-y-120 rounded-full bg-radial from-blue-100 from-15% via-amber-300 via-30% to-white to-60%"
-          initial={{ opacity: 0.5, translateY: -300 }}
-          animate={{ transition: { duration: 1 }, opacity: 1, translateY: 0 }}
-        ></motion.div>
-        <div className="flex h-lvh w-lvw items-end justify-center py-0">
+      <div className="flex w-screen items-center justify-center overflow-x-hidden">
+        <div className="flex h-screen w-screen items-end justify-center py-0">
           <div className="absolute z-20 flex h-lvh flex-col justify-between py-6 md:justify-end lg:justify-end">
             <motion.p
-              className="font-display relative translate-y-1 px-8 pr-16 text-[1.5rem] leading-[1.2] font-medium tracking-tight text-gray-700 md:px-0 md:pr-0 lg:px-0 lg:pr-0"
+              className="font-display relative translate-y-1 px-6 pr-16 text-[1.25rem] leading-[1.2] font-medium tracking-tight text-gray-700 md:px-0 md:pr-0 md:text-[1.5rem] lg:px-0 lg:pr-0 lg:text-[1.5rem]"
               initial={{ opacity: 0 }}
               animate={{ transition: { duration: 1 }, opacity: 1 }}
             >
@@ -57,7 +52,7 @@ const Home = () => {
               Nice to meet you! I hope we can work together.
             </motion.p>
             <motion.h1
-              className="text-center font-serif text-[9rem] leading-none font-medium tracking-tighter select-none md:text-[9.5rem] lg:text-[18.5svw]"
+              className="text-center font-serif text-[min(30vw,7rem)] leading-none font-medium tracking-tighter select-none md:text-[9.5rem] lg:text-[18.5svw]"
               initial={{ opacity: 0 }}
               animate={{ transition: { duration: 1 }, opacity: 1 }}
             >
